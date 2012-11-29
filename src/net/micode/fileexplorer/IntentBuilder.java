@@ -98,7 +98,7 @@ public class IntentBuilder {
         if (uris.size() == 0)
             return null;
 
-        boolean multiple = uris.size() > 1;
+        boolean multiple = uris.size() > 0;
         Intent intent = new Intent(multiple ? android.content.Intent.ACTION_SEND_MULTIPLE
                 : android.content.Intent.ACTION_SEND);
 
